@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- title and meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML5 Video Background Tutorial</title>
+
+  <!-- css -->  
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="hero-content">            
+            <video autoplay loop muted class="hero-video">
+                <source src="assets/Strum-Away.webm" type="video/webm"/>
+                <source src="assets/Strum-Away.mp4" type="video/mp4"/>
+                Your browser does not support the HTML5 video tag.
+            </video>
+            <div class="hero-text">
+                <h1>John Doe</h1>
+                <p>The best guitar teacher on the web!</p>
+                <a href="#">Let's learn together</a>        
+            </div><!-- end hero-text-->            
+            <a href="#intro" class="more round-btn"><i class="fa fa-chevron-down"></i></a>     
+        </div><!--end hero content-->
+    </div><!--end hero -->
+
+    <div class="wrapper">
+        <section>
+            <h2 id="intro">About <span>John Doe</span></h2>
+            <p>
+                At eleven in the morning the train had reached the dividing ridge of the waters at Bridger Pass, seven thousand five hundred and twenty-four feet above the level of the sea, one of the highest points attained by the track in crossing the Rocky Mountains. After going about two hundred miles, the travellers at last found themselves on one of those vast plains which extend to the Atlantic, and which nature has made so propitious for laying the iron road.
+            </p>
+            <p>
+                On the declivity of the Atlantic basin the first streams, branches of the North Platte River, already appeared. The whole northern and eastern horizon was bounded by the immense semi-circular curtain which is formed by the southern portion of the Rocky Mountains, the highest being Laramie Peak. Between this and the railway extended vast plains, plentifully irrigated. On the right rose the lower spurs of the mountainous mass which extends southward to the sources of the Arkansas River, one of the great tributaries of the Missouri.
+            </p>            
+        </section>
+
+        <section id="testimonials">
+            <h2>Student <span>Testimonials</span></h2>
+
+            <div class="video-overlay">
+                <video id="small-video" autoplay loop muted >
+                    <source src="assets/For_Wes.webm" type="video/webm"/>
+                    <source src="assets/For_Wes.mp4" type="video/mp4"/>
+                    Your browser does not support the HTML5 video tag.
+                </video>
+                <div class="overlay">
+                    <blockquote>
+                        <p>At half-past twelve the travellers caught sight for an instant of Fort Halleck, which commands that section; and in a few more hours the Rocky Mountains were crossed. <span>There was reason to hope, then, that no accident would mark the journey through this difficult country. The snow had ceased falling, and the air became crisp and cold. Large birds, frightened by the locomotive, rose and flew off in the distance. No wild beast appeared on the plain. It was a desert in its vast nakedness.</span></p>
+                        <footer><cite>Jules Verne</cite></footer>
+                    </blockquote>
+                    <button id="play-btn" class="round-btn"><i class="fa fa-pause"></i></button>
+                </div><!--end overlay-->
+            </div><!--end video-overlay-->
+        </section>        
+    </div><!-- end wrapper -->
+
+    <footer class="site-footer">
+        <p>Videos provided by <a href="http://coverr.co/">Coverr</a></p>
+        <p>Placeholder text provided by <a href="http://www.fillerati.com/">Fillerati</a></p>               
+        <p class="copyright">
+            Copyright &copy; 2015 <a href="http://acasaprogramming.ro/">AcasA Programming</a> 
+        </p>
+    </footer>
+
+    <!-- js -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
